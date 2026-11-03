@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formula 1 | Race Intelligence</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: Arial, sans-serif;
+    background: #090909;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: #111;
+    border-bottom: 2px solid #e10600;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    color: #e10600;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover { color: #e10600; }
+
+.hero {
+    min-height: 470px;
+    padding: 110px 8%;
+    background:
+      linear-gradient(90deg, #090909 20%, rgba(9,9,9,.65)),
+      url("https://images.unsplash.com/photo-1504707748692-419802cf939d?auto=format&fit=crop&w=1800&q=85")
+      center/cover;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 70px);
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+.hero h1 span { color: #e10600; }
+
+.hero p {
+    color: #ccc;
+    max-width: 600px;
+    line-height: 1.8;
+    margin: 22px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #e10600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 7px 8px 7px 0;
+}
+
+.btn:hover { background: #b80000; }
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+}
+
+section {
+    padding: 65px 7%;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-title span { color: #e10600; }
+
+.subtitle {
+    color: #aaa;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.stat {
+    background: #171717;
+    border-left: 4px solid #e10600;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.stat h2 {
+    color: #e10600;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.stat p { color: #bbb; }
+
+.dashboard {
+    background: #111;
+}
+
+.dashboard-frame {
+    width: 100%;
+    height: 850px;
+    border: 1px solid #333;
+    border-radius: 7px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.dashboard-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #171717;
+    padding: 28px;
+    border-radius: 7px;
+    border-bottom: 3px solid #e10600;
+}
+
+.card h3 {
+    color: #e10600;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.about {
+    line-height: 1.9;
+    color: #bbb;
+    max-width: 900px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background: #111;
+    border-top: 2px solid #e10600;
+    color: #999;
+    line-height: 2;
+}
+
+footer a { color: #e10600; }
+
+@media(max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a { margin: 0 7px; }
+    .hero { padding: 80px 7%; }
+    .dashboard-frame { height: 650px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">F1 RACE INTELLIGENCE</div>
+    <div>
+        <a href="#home">HOME</a>
+        <a href="#overview">OVERVIEW</a>
+        <a href="#dashboard">DASHBOARD</a>
+        <a href="#about">ABOUT</a>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+    <h1>FORMULA 1<br>
+    <span>RACE INTELLIGENCE</span></h1>
+
+    <p>
+    Explore Formula 1 racing performance through data analytics
+    and interactive visualizations. Discover race intelligence,
+    championship trends and racing insights from 2010 to 2026.
+    </p>
+
+    <a href="#dashboard" class="btn">EXPLORE DASHBOARD</a>
+
+    <a href="https://public.tableau.com/app/profile/anant.pandey2270/viz/BookFORMULA1RaceIntelligenceDashboardAnalysisReport20102026/Dashboard1?publish=yes"
+       target="_blank" class="btn btn-outline">
+       OPEN TABLEAU PUBLIC
+    </a>
+</header>
+
+<section id="overview">
+    <h2 class="section-title">PROJECT <span>OVERVIEW</span></h2>
+
+    <p class="subtitle">
+    Formula 1 Race Intelligence Dashboard Analysis Report
+    | 2010 – 2026
+    </p>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>2010–2026</h2>
+            <p>Analysis Period</p>
+        </div>
+
+        <div class="stat">
+            <h2>F1</h2>
+            <p>Motorsport Analytics</p>
+        </div>
+
+        <div class="stat">
+            <h2>Tableau</h2>
+            <p>Visualization Platform</p>
+        </div>
+
+        <div class="stat">
+            <h2>Live</h2>
+            <p>Interactive Dashboard</p>
+        </div>
+    </div>
+</section>
+
+<section class="dashboard" id="dashboard">
+    <h2 class="section-title">LIVE <span>DASHBOARD</span></h2>
+
+    <p class="subtitle">
+    Explore the original Formula 1 Race Intelligence dashboard
+    directly from Tableau Public.
+    </p>
+
+    <div class="dashboard-frame">
+        <iframe
+        src="https://public.tableau.com/views/BookFORMULA1RaceIntelligenceDashboardAnalysisReport20102026/Dashboard1?:showVizHome=no&:embed=true"
+        title="Formula 1 Race Intelligence Tableau Dashboard"
+        allowfullscreen>
+        </iframe>
+    </div>
+
+    <br>
+
+    <a class="btn"
+       href="https://public.tableau.com/app/profile/anant.pandey2270/viz/BookFORMULA1RaceIntelligenceDashboardAnalysisReport20102026/Dashboard1?publish=yes"
+       target="_blank">
+       VIEW FULL DASHBOARD
+    </a>
+</section>
+
+<section>
+    <h2 class="section-title">ANALYTICS <span>AREAS</span></h2>
+
+    <p class="subtitle">
+    Key areas of Formula 1 data exploration.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Driver Performance</h3>
+            <p>Explore driver results, performance comparisons
+            and championship statistics.</p>
+        </div>
+
+        <div class="card">
+            <h3>Constructor Analysis</h3>
+            <p>Understand team performance and constructor
+            championship trends.</p>
+        </div>
+
+        <div class="card">
+            <h3>Race Intelligence</h3>
+            <p>Explore Grand Prix results, race outcomes
+            and historical patterns.</p>
+        </div>
+
+        <div class="card">
+            <h3>Championship Trends</h3>
+            <p>Explore season-wise racing and championship
+            performance trends.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">ABOUT THE <span>PROJECT</span></h2>
+
+    <p class="about">
+    Formula 1 Race Intelligence is a data visualization project
+    developed using Tableau Public. Its objective is to present
+    Formula 1 racing information through interactive dashboards
+    and analytical views.
+
+    The project focuses on exploring historical racing performance,
+    driver comparisons, constructor analysis and championship trends
+    across the selected 2010–2026 analysis period.
+
+    This website provides direct access to the published Tableau
+    dashboard and acts as a presentation page for the project.
+    </p>
+</section>
+
+<footer>
+    <h3>FORMULA 1 RACE INTELLIGENCE</h3>
+    <p>Data Analytics & Visualization Project</p>
+    <p>Dashboard powered by Tableau Public</p>
+    <p>
+    <a href="https://public.tableau.com/app/profile/anant.pandey2270/viz/BookFORMULA1RaceIntelligenceDashboardAnalysisReport20102026/Dashboard1?publish=yes"
+       target="_blank">Visit Tableau Public Dashboard</a>
+    </p>
+    <p>© 2026 Formula 1 Race Intelligence Project</p>
+</footer>
+
+</body>
+</html>
